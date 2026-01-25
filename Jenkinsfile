@@ -12,6 +12,7 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/HajarBraidi/cargo-tracker-Ensais.git'
             }
         }
+        //test webhook
 
         stage('Build & Test with Coverage') {
             steps {
@@ -20,7 +21,7 @@ pipeline {
         }
 
     }
-//
+//test for webhook
     post {
         success {
             echo 'Build et analyse terminés avec succès !'
